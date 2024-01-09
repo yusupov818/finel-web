@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="jquery-3.6.0.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        $(document).ready(function () {
+            $("#none-info").click(function () {
+                $(".center-info").hide(300);
+
+            });
+            $("#play").click(function () {
+                $(".video-1").show('ease');
+                $(".container").css('filter', 'blur(20px)');
+                $(".disp-none").hide();
+            });
+            $(".x").click(function () {
+                $(".video-1").hide('ease');
+                $(".container").css("filter", "blur(0)");
+                $(".disp-none").show();
+            });
+
+
+            $(".mob-menu").click(function () {
+                $("#menu-bar").show("ease");
+                $(".disp-none").css('filter', 'blur(20px)');
+            })
+
+            $("#x-x").click(function () {
+                $(".menu-mob").hide(500);
+                $(".disp-none").css('filter', 'blur(0px)')
+
+            });
+
+        });
+
+
+    </script>
+</head>
+
+<body>
+    <div>
+        <nav class="video-1">
+            <span class="x">
+                <p>X</p>
+            </span>
+            <video src="video/О клинике SOUL dental clinic.mp4" autoplay="autoplay" muted="muted" loop="loop"></video>
+        </nav>
+    </div>
+    <div class="container">
+        <!-- background-image -->
+        <div class="rasm-glav">
+            <!-- menu -->
+            <div class="menu-web">
+
+                <div class="logo-glav">
+                    <img src="image/Seoul-Dental-logo.png" alt="">
+                </div>
+
+                <div class="menu" id="animation">
+
+                    <div>
+                        <ul>
+                            <li><a href="ru.html">ГЛАВНАЯ СТРАНИЦА</a></li>
+                            <li><a href="about.ru.html">УСЛУГИ</a></li>
+                            <li><a href="vrac.ru.html">ВРАЧИ</a></li>
+                            <li><a href="xizmatlar.ru.html"> ЦЕНЫ</a></li>
+                            <li><a href="form.ru.html">КОММУНИКАЦИЯ</a></li>
+
+
+                        </ul>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="mob-menu">
+                    <nav><i class="lni lni-menu"></i></nav>
+                </div>
+                <div id="menu-bar" class="menu-mob noactive-mob">
+                    <div class="close-menu">
+                        <span id="x-x">X</span>
+                    </div>
+                    <section class="menu-mob">
+                        <span><img src="image/Seoul-Dental-logo.png" alt=""></span>
+                        <ul>
+                            <li><a href="index.html">ГЛАВНАЯ СТРАНИЦА</a></li>
+                            <li><a href="about.html">О НАС</a></li>
+                            <li><a href="vrac.html">ВРАЧИ</a></li>
+                            <li><a href="xizmatlar.html">УСЛУГИ И ЦЕНЫ</a></li>
+                            <li><a href="form.html">КОММУНИКАЦИЯ</a></li>
+
+
+                        </ul>
+
+                    </section>
+                </div>
+                <div class="lunge">
+                    <div>
+                        <span id="ru"><a href="ru.html">RU</a></span>
+                        <span id="en"><a href="index.html">UZ</a></span>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+
+            <div class="center-page" id="animation2">
+
+                <div>
+                    <span id="bold">
+                        <h1>Уверенная улыбка с «SEOUL DENTAL».</h1>
+                    </span>
+                </div>
+                <div id="play-menu">
+                    <span id="tall">Посмотрите видео о нас</span>
+                    <nav id="play"><img src="image/play-gif.gif" alt=""></nav>
+
+                </div>
+            </div>
+
+            <div class="center-button" id="animation2">
+                <a style="text-decoration: none;" href="about.html">
+                    <div id="center-button"><br>
+                        <span id="bold-button">ПОДРОБНОСТИ О КЛИНИКЕ</span>
+                        <i class="lni lni-line-spacing"></i>
+                    </div>
+                </a>
+            </div>
+
+            <div class="center-info" >
+
+                <div class="center-info-txt" id="none-info"><br>
+                    <p id="none-info" style="color: black; cursor: pointer; margin-top: -20px; margin-left: 320px;">X
+                    </p>
+                    <span>Добро пожаловать в "SEOUL DENTAL"!</span> <br><br>
+                    <p>-Мир, где вас ждут гармония и красота, красивая музыка и уютная атмосфера.</p>
+                    
+                </div>
+            </div>
+            <!-- 
+            <div class="scroll-down">
+                <span>
+                    
+                </span>
+            </div> -->
+
+        </div>
+
+        <div class="disp-none" id="animation2">
+            <!-- page 3  -->
+            <div class="page-3">
+
+                <div id="page-3-1">
+                    <div>
+                        <h4> - <br>Инновации "SELUL DENTAL"</h4>
+                    </div>
+                </div>
+                <div id="page-3-2">
+                    <h4>- <br> Стоматология преобразилась благодаря цифровым технологиям</h4>
+                    <p>
+                        Стоматологическая клиника "SEOUL DENTAL" совершенствуется день ото дня
+                        и передовой для безопасного и комфортного лечения пациентов
+                        используя все возможности технологий.</p>
+                </div>
+
+            </div>
+
+            <div class="page-foto">
+
+                <div id="foto-page">
+                    <nav class="log11"><img src="image/4d.jpg" alt=""></nav>
+
+                </div>
+                <div id="foto-page" class="none-foto-1">
+                    <nav class="log12"><img src="image/info3.webp" alt=""></nav>
+
+
+                </div>
+                <div id="foto-page" class="none-foto">
+                    <nav class="log13"><img src="image/4d3.jpg" alt=""></nav>
+
+
+                </div>
+
+            </div>
+
+            <div class="page-foto-ustiga">
+
+                <div id="page-foto-ustiga">
+                    <h4>3D ПАЦИЕНТ</h4>
+                    <p>
+                        Стоматологическая клиника "SEOUL DENTAL" 3D пациент
+                        движение к понятию - изначально, прежде чем мы вступаем в контакт с живым человеком
+                        виртуальный
+                        "лечение" прототипа</p>
+                </div>
+
+            </div>
+
+            <!-- page 3  -->
+            <div class="page-3">
+
+                <div id="page-3-1">
+                    <div>
+                        <h4> - <br>Почему именно «SEOUL DENTAL»?</h4>
+                    </div>
+                </div>
+                <div id="page-3-2">
+                    <h4>- <br> В "SEUL DENTAL" индивидуальный подход ко всему</h4>
+                    <p>
+                        скорость восстановления наших технологий
+                        увеличивается, вам не придется долго ждать!</p>
+                </div>
+
+            </div>
+
+            <div class="page-4">
+                <nav class="media-page-4">
+                    <div id="a01" class="a01">
+                        <div class="f4" style="float: left;"><img src="image/1.png" alt=""></div>
+                        <h4>САМЫЙ УДОБНЫЙ СПОСОБ ЗАПИСАТЬСЯ НА ПРИЕМ</h4><br>
+                        <p>Все, что вам нужно, это наш менеджер по работе с клиентами Анастасия
+                            позвоните или оставьте заявку. это о ценах
+                            ведет путь
+                            выбирает своего личного куратора-врача и записывает на прием</p>
+                    </div>
+                    <div id="a02">
+                        <div class="f4"><img src="image/2.png" alt=""></div>
+                        <h4>
+                            Встреча с врачом-куратором</h4><br>
+                        <p>
+                            разработка комплекса и плана лечения, госпитализация больного
+                            фото-протокол изготовления, а также
+                            проработка всех нюансов и последующих этапов лечения.</p>
+                    </div>
+                </nav>
+                <nav class="media-page-44">
+                    <div id="a011">
+                        <div class="f4-4"><img src="image/3.png" alt=""></div>
+                        <div class="f4-none-web"><img src="image/3 (2).png" alt=""></div>
+                        <h4>Планирование - после лечения</h4><br>
+                        <p>Перед проведением лечения - мы все о будущем лечении
+                            выполняем операции, изучающие подводные камни и детали</p>
+                    </div>
+                    <div id="a022">
+                        <div class="f4-4" style="float: left;"><img src="image/4 (1).png" alt=""></div>
+                        <div class="f4-none-web"><img src="image/4 (2).png" alt=""></div>
+                        <h4>Личный онлайн-кабинет пациента "Seoul Dental"</h4><br>
+                        <p>У каждого пациента есть личный онлайн-кабинет
+                            можно проверить график лечения и получить записи о приеме</p>
+                    </div>
+                </nav>
+            </div>
+
+
+
+
+
+            <div class="kelnt-primium">
+                <div id="kelnt-primium">
+                    <div class="blok-1">
+                        <p>- <br>
+                            - Запишитесь на прием</p>
+                    </div>
+                    <div class="blok-2">
+                        <h4>
+                            Наша миссия - понять вашу проблему и
+                            заключается в составлении индивидуального графика лечения
+                        </h4>
+                        <p>ЗДРАВСТВУЙТЕ, МЕНЯ ЗОВУТ АНАСТАСИЯ Я РУКОВОДИТЕЛЬ КЛИНИКИ "SEUL DENTAL"
+                        </p>
+                        <P>
+                            каждый день общаюсь с пациентами, которые выбирают клинику и пытаюсь определить цены
+                            я делаю
+                        </P>
+                        <p>
+                            в результате вы будете точно знать, как решить вашу проблему, сколько это будет стоить и
+                            что я
+                            Я выбираю обратиться к врачу.
+                        </p>
+                    </div>
+                    <div class="blok-3">
+                        <p>Позвоните по этому номеру, чтобы записаться на прием к врачу</p>
+                        <h1>+998 90818 11 88</h1>
+                        <p>Если хотите, я позвоню вам сама</p>
+                        <li><a href="form.html">Оставить информацию</a></li>
+                    </div>
+                </div>
+            </div>
+            <!-- hr-menedjer -->
+            <div class="hr-menedjer">
+                <nav><img src="image/hrr.webp" alt=""></nav>
+            </div>
+
+            <!-- footer -->
+            <footer>
+                <section class="footer">
+                    <div class="post-1">
+                        <nav class="lokation">
+                            <span><i class="lni lni-map-marker"></i></span>
+                            <span>
+                                <h3>Адрес:</h3>
+                            </span>
+                            <span>
+                                <p>город Ташкент,</p>
+                            </span>
+                            <span>
+                                <p>Яккасарайский район,</p>
+                            </span>
+                            <span>
+                                <p>Улица Шота-Руставели:</p>
+                            </span>
+                        </nav>
+                    </div>
+                    <!--  -->
+                    <div class="post-2">
+                        <nav class="phone">
+                            <span><i class="lni lni-phone"></i></span>
+                            <span>
+                                <h3>Контактные телефоны:</h3>
+                            </span>
+                            <span>
+                                <p>(+998) 90 818 11 88</p>
+                            </span>
+                            <span>
+                                <p>(+998) 98 314 88 28</p>
+                            </span>
+                            <span>
+                                <p>souldental.spb@gmail.com</p>
+                            </span>
+                        </nav>
+                    </div>
+                    <!--  -->
+                    <div class="post3">
+                        <nav class="time">
+                            <span><i class="lni lni-alarm-clock"></i></span>
+                            <span>
+                                <h3>Рабочее время:</h3>
+                            </span>
+                            <span>
+                                <p>ПН-ЧТ с 09:00 до 21:00</p>
+                            </span>
+                            <span>
+                                <p>Воскресенье выходной день!</p>
+                            </span>
+                        </nav>
+                    </div>
+                </section>
+                <!--  -->
+                <div class="web-icon">
+                    <span><i class="lni lni-instagram"></i></span>
+                    <span><i class="lni lni-facebook"></i></span>
+                    <span><i class="lni lni-youtube"></i></span>
+                    <span><i class="lni lni-telegram-original"></i></span>
+                </div>
+                <!--  -->
+                <div id="adress">
+                    <div><iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d52287.01683411943!2d69.2453624256724!3d41.31510698915152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2s!4v1687238196338!5m2!1sru!2s"
+                            width="100%" height="470" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                </div>
+                <!-- bottom menu -->
+                <div class="bottom-menu">
+
+
+                    <nav id="buttom-menu">
+                        <div class="logo-glav">
+                            <img src="image/Seoul-Dental-logo.png" alt="">
+                        </div>
+                        <ul>
+                            <li><a href="ru.html">ГЛАВНАЯ СТРАНИЦА</a></li>
+                            <li><a href="about.ru.html">УСЛУГИ</a></li>
+                            <li><a href="vrac.ru.html">ВРАЧИ</a></li>
+                            <li><a href="xizmatlar.ru.html"> ЦЕНЫ</a></li>
+                            <li><a href="form.ru.html">КОММУНИКАЦИЯ</a></li>
+
+
+                        </ul>
+                        <hr>
+                        <div class="lunge">
+
+                            <div id="none-lunge">
+                                <span id="ru"><a href="ru.html">RU</a></span>
+                                <span id="en"><a href="index.html">UZ</a></span>
+                            </div>
+                            <br>
+                            <div class="web-site">
+                                <span>web-site by @TECHBRAIN COMPANY</span>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </footer>
+        </div>
+</body>
+
+</html>
